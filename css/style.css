@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a::after {
+  text-decoration: none;
+  text-decoration: black;
+
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+/* your code goes here */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 900px;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+
+.navbar {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  /* padding: 10px; */
+}
+
+.list-menu {
+  display: flex;
+}
+
+.search-field {
+  width: 500px;
+  height: 40px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.cart > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.custom-alert {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.custom-alert.show {
+  opacity: 1;
+}
